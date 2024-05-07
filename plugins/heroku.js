@@ -116,7 +116,7 @@ command(
     type: "heroku",
   },
   async (message) => {
-    let msg = "```Here your all Heroku vars\n\n\n";
+    let msg = "```Here your all nezuko Heroku vars\n\n\n";
     heroku
       .get(baseURI + "/config-vars")
       .then(async (keys) => {
@@ -186,7 +186,7 @@ command(
     if (commits.total === 0) {
       await message.sendMessage("*_No Updates Available_*");
     } else {
-      var availupdate = "*ᴜᴘᴅᴀᴛᴇs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ* \n\n";
+      var availupdate = "*ᴜᴘᴅᴀᴛᴇs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ꜰᴏʀ ɴᴇᴢᴜᴋᴏ* \n\n";
       commits["all"].map((commit, num) => {
         availupdate += num + 1 + " ⋆ " + (commit.message) + "\n";
       });
