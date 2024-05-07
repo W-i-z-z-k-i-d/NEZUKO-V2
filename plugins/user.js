@@ -260,22 +260,22 @@ Description: ${i.desc}\`\`\``);
         menu += `\n ╭┴────────────┈⚆`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n❆  ${cmd.trim()}`;
+          menu += `\n❐  ${cmd.trim()}`;
         });
         menu += `\n ╰─────────────┈⚆`;
       });
-menu += `\n\n𝗜𝗭𝗨𝗠𝗜-𝗫𝗗`;
+menu += `\n\n𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃`;
       let penu = tiny(menu)
       let img = config.BOT_INFO.split(';')[2]
       return await message.sendFromUrl(img, {fileLength: "5555544444", gifPlayback: true, contextInfo: { externalAdReply: {
-title: "𝗜𝗭𝗨𝗠𝗜🧚‍♂️",
+title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
 body: "",
 sourceUrl: "",
 mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Qh1AEV0.jpeg" }}, caption: (penu)}, {quoted: message })
+thumbnailUrl: "https://i.imgur.com/Q49D1NN.gif" }}, caption: (penu)}, {quoted: message })
     }
 }catch(e){
 message.reply(e)
@@ -320,7 +320,7 @@ command(
       if (desc) menu += `\n│  Use: \`\`\`${desc}\`\`\``;
       menu += `\n│\n`;
     });
-    menu += `╰───────┈┫「 𝐈𝐙𝐔𝐌𝐈 」┣┈────♡`;
+    menu += `╰───────┈┫「 𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃 」┣┈────♡`;
     return await message.reply(message.jid, { text: (tiny(menu)) })
 })
 
