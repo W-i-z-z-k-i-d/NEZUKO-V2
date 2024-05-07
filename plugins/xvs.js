@@ -19,15 +19,15 @@ var data = await fek.json();
 > *DURATION* : ${data.result[i].duration}
 > *URL* : ${data.result[i].url}\n`
         }
-        txt+=`\n𝐈𝐙𝐔𝐌𝐈-𝐗𝐃`
+        txt+=`\n𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃`
                    await message.client.sendMessage(message.jid,{ document :{ url: "https://www.mediafire.com/file/n1qjfxjgvt0ovm2/IMG-20240211-WA0086_%25281%2529.pdf/file" }, fileName: "𝗫 𝗩𝗜𝗗𝗘𝗢 𝗥𝗘𝗦𝗨𝗟𝗧𝗦" , mimetype: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileLength: "999999950", contextInfo: { externalAdReply: {
-title: "𝐈𝐙𝐔𝐌𝐈-𝐗𝐃",
+title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
 body: "",
 sourceUrl: "",
 mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/bZlTi5a.jpeg" }}, caption: (txt)}, {quoted: message })
+thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption: (txt)}, {quoted: message })
     }
     );
