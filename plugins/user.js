@@ -24,18 +24,23 @@ you may not use this file except in compliance with the License.
 X-Asena - X-Electra
 */
 
-command({
-    pattern: "ping",
-    fromMe: true,
-    desc: "To check ping",
-    type: "user",
-}, async (message, match, client) => {
-    const start = new Date().getTime();
-    await message.sendMessage("```Pɪɴɢ!```");
-    const end = new Date().getTime();
-    const ms = end - start;
-    return await message.client.sendMessage(message.jid, { location: { degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name: `Pᴏɴɢ ${ms}ᴍꜱ`, address: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃"} });
-});
+command(
+    {
+        pattern: "ping",
+        fromMe: isPrivate,
+        desc: "To check ping",
+        type: "user",
+    },
+    async (message, match, client) => {
+        const start = new Date().getTime();
+      let { key } = await message.sendMessage(`*ᴩɪɴɢ ㋞*`);
+        const end = new Date().getTime();
+var speed = end - start;
+ 
+await new Promise(t => setTimeout(t,0))
+         await message.client.sendMessage(message.jid,{text:`*ᴩᴏɴɢ* ㋚
+${speed} *𝚖𝚜*` , edit: key});
+})
 
 /* Copyright (C) 2022 X-Electra.
 Licensed under the  GPL-3.0 License;
@@ -223,19 +228,18 @@ Description: ${i.desc}\`\`\``);
         .split(",");
         let usern = message.pushName
         const readMore = String.fromCharCode(8206).repeat(4001);
-      let menu = `\n╭━━━⭙〔 ${BOT_INFO.split(";")[0]} 〕⭙━━━┈
-    ╭────────── `\n╭━━━〔 ${BOT_INFO.split(";")[0]} ⁩〕━━━┈⊷
-┃✵╭──────────────
-┃✵│ *ᴏᴡɴᴇʀ* : ${BOT_INFO.split(";")[1]}
-┃✵│ *ᴜꜱᴇʀ* : ${usern}
-┃✵│ *ᴄᴏᴍᴍᴀɴᴅꜱ* : ${plugins.commands.length}
-┃✵│ *ᴛɪᴍᴇ* : ${time}
-┃✵│ *ᴅᴀᴛᴇ* : ${date}
-┃✵│ *ᴩʀᴇꜰɪx* : ${config.HANDLERS}
-┃✵│ *ᴍᴏᴅᴇ* : ${config.WORK_TYPE}
-┃✵│ *ᴠᴇʀꜱɪᴏɴ* : ${require("../package.json").version}
-┃✵╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷\n ${readMore}`
+      let menu = `\n╔┉┉┉〔 ${BOT_INFO.split(";")[0]} 〕┉┉┉┉┉⚇
+    ╔┅┅┅┅┅┅┅┅┅┅┅┅⚅
+  ⚈ ┋ *ᴏᴡɴᴇʀ*: ${BOT_INFO.split(";")[1]}
+  ⚈ ┋ *ᴜᴜꜱᴇʀ*: ${usern}
+  ⚈ ┋ *ᴅᴀᴛᴇ*: ${date}
+  ⚈ ┋ *ᴛɪᴍᴇ*: ${time}
+  ⚈ ┋ *ᴄᴏᴍᴍᴀɴᴅꜱ*: ${plugins.commands.length}
+  ⚈ ┋ *ᴍᴏᴅᴇ*: ${config.WORK_TYPE}
+  ⚈ ┋ *ᴩʀᴇꜰɪx*: ${config.HANDLERS}
+  ⚈ ┋ *VERSION*: ${require("../package.json").version}
+    ╚┅┅┅┅┅┅┅┅┅┅┅┅⚅
+╚┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉⚇\n ${readMore}\n╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄⛒`;
 
       let cmnd = [];
       let cmd;
@@ -255,28 +259,28 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n ╭─────────────┈⭙`;
-        menu += `\n  │ 「 *${cmmd.toUpperCase()}* 」`;
-        menu += `\n ╰┬────────────┈⭙`
-        menu += `\n ╭┴────────────┈⭙`;
+        menu += `\n   ╔─────────────┈⚆`;
+        menu += `\n   ࿂┊  ❲ *${cmmd.toUpperCase()}* ❳`;
+        menu += `\n   ╚┬────────────┈⚆`
+        menu += `\n   ╔┴────────────┈⚆`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n ✵ ${cmd.trim()}`;
+          menu += `\n   ✵  ${cmd.trim()}`;
         });
-        menu += `\n ╰─────────────┈⭙`;
+        menu += `\n   ╚─────────────┈⚆`;
       });
-menu += `\n\n𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐍𝐞𝐳𝐮𝐤𝐨`;
+menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄⛒`;
       let penu = tiny(menu)
-      let img = config.BOT_INFO.split(';')[2]
-      return await message.sendFromUrl(img, {fileLength: "5555544444", gifPlayback: true, contextInfo: { externalAdReply: {
-title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
-body: "",
-sourceUrl: "",
-mediaUrl: "",
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}, caption: (penu)}, {quoted: message })
+      let vd = BOT_INFO.split(";")[2];
+      return await message.sendFromUrl(vd, {fileLength: "500000000", gifPlayback: true, contextInfo: {
+      mentionedJid: [m.sender],
+      forwardingScore: 999,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363239634100086@newsletter',
+      newsletterName: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🦋",
+      serverMessageId: -1
+            }}, caption: (penu)}, {quoted: message })
     }
 }catch(e){
 message.reply(e)
@@ -321,7 +325,7 @@ command(
       if (desc) menu += `\n│  Use: \`\`\`${desc}\`\`\``;
       menu += `\n│\n`;
     });
-    menu += `╰───────┈┫「 𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃 」┣┈────♡`;
+    menu += `╰───────┈┫「 𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃-𝐁𝐎𝐓 」┣┈────♡`;
     return await message.reply(message.jid, { text: (tiny(menu)) })
 })
 
@@ -335,13 +339,13 @@ X-Asena - X-Electra
 
 command(
   {
-    pattern: "install ?(.*)",
+    pattern: "plugin ?(.*)",
     fromMe: true,
     desc: "Install External plugins",
     type:'user'
   },
   async (message, match) => {
-    if (!match) return await message.sendMessage("*_Plugin Url not found_*");
+    if (!match) return await message.sendMessage("*_Send a plugin url_*");
     for (let Url of getUrl(match)) {
       try {
         var url = new URL(Url);
@@ -377,7 +381,7 @@ command(
         await installPlugin(url, plugin_name);
 
         await message.sendMessage(
-          `*_Plugin installed : ${commands.join(",")}_*`
+          `*_New plugin installed : ${commands.join(",")}_*`
         );
       }
     }
@@ -453,8 +457,7 @@ command(
 	type: 'user'
 }, async (message, match) => {
 	match = match || message.reply_message.text
-	if (!match) return await message.reply('*_Need Text_!*\n *Example: setbio _Eypz-God_*.')
+	if (!match) return await message.reply('*_Need Text_!*\n *Example: setbio _Ezra-XD_*.')
 	await message.client.updateProfileStatus(match)
 	await message.reply('*_Successfully bio updated_*')
 })
-
