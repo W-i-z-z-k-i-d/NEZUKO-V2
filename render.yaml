@@ -20,7 +20,7 @@ services:
       - key: AUDIO_DATA
         value: Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;https://graph.org/file/3879cf1910f65bd8457d7.jpg
       - key: HANDLER
-        value:/
+        value: /
       - key: WORK_TYPE
         value: private
       - key: SERVER
