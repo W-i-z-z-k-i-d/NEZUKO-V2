@@ -46,10 +46,10 @@ command(
       let text = tiny(
         "\n𝗙𝗔𝗡𝗖𝗬 𝗧𝗘𝗫𝗧 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥\n\nReply to a message\nExample: .fancy 32\n\n"
       );
-      listall("nezuko").forEach((txt, num) => {
+      listall("NEZUKO").forEach((txt, num) => {
         text += `${(num += 1)} ${txt}\n`;
       });
-        text += "\n\n𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔"
+        text += "\n\n𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐍𝐞𝐳𝐮𝐤𝐨🐼"
       return await message.client.sendMessage(message.jid,{ document :{ url: "https://www.mediafire.com/file/n1qjfxjgvt0ovm2/IMG-20240211-WA0086_%25281%2529.pdf/file" }, fileName: "𝗡𝗘𝗭𝗨𝗞𝗢 𝗠𝗗 𝗙𝗔𝗡𝗖𝗬 𝗠𝗘𝗡𝗨" , mimetype: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileLength: "999999950", contextInfo: { externalAdReply: {
 title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
 body: "",
