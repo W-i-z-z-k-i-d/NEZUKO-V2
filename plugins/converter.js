@@ -93,7 +93,7 @@ mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }} },
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }} },
       "sticker"
     );
   }
@@ -174,7 +174,7 @@ mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}
       },
       "sticker"
     );
