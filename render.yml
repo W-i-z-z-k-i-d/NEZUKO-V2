@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: NEZUKO-V2
+    env: node
+    branch: main
+    repo: https://github.com/godzenitsu/NEZUKO-V2.git
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: SESSION_ID
+        sync: false
+      - key: BOT_INFO
+        value: Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;https://graph.org/file/3879cf1910f65bd8457d7.jpg
+      - key: ALWAYS_ONLINE
+        value: true
+      - key: AUTO_STATUS_VIEWS
+        value: true
+      - key: AUDIO_DATA
+        value: Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;https://graph.org/file/3879cf1910f65bd8457d7.jpg
+      - key: HANDLER
+        value:.
+      - key: WORK_TYPE
+        value: private
+      - key: SERVER
+        value: render
+      - key: CAPTION
+        value: 𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🌈
+      - key: STICKER_DATA
+        value: 𝘇𝗲𝗻𝗶𝘁𝘀𝘂;𝗻𝗲𝘇𝘂𝗸𝗼
+      - key: SUDO
+        value: 917025673121
+      - key: SERVERURL
+        value:
+      - key: DATABASE_URL
+        sync: false
+      - key: LOGS
+        sync: false: 
