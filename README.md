@@ -1,6 +1,6 @@
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 <div align="center" class= "main"> 
-  <img src="https://i.imgur.com/Q49D1NN.gif" width="300" height="300"/>
+  <img src="https://i.imgur.com/f48WF0n.jpeg" width="300" height="300"/>
   <h1>ＮＥＺＵＫＯ - ＭＤ</h1>
 
 <a href="https://github.com/godzenitsu"><img title="Creator" src="https://img.shields.io/badge/Creator-ZENITSU-red.svg?style=for-the-badge&logo=github"></a>
