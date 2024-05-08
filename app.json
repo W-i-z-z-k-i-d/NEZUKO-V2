@@ -1,7 +1,7 @@
 {
   "name": "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🦋",
   "description": "NEZUKO-MD Multi Device whatsapp bot",
-  "logo": "https://i.imgur.com/wC63W5L.jpeg",
+  "logo": "https://i.imgur.com/imOAWEN.jpeg",
   "keywords": ["whatsapp"],
   "repository": "https://github.com/godzenitsu/NEZUKO-V2",
   "website": "https://nezukosupport.vercel.app/",
@@ -27,7 +27,7 @@
       "value": "𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃🦋"
     },
        "STICKER_DATA": {
-      "description": "Sticker pack name, eg : 𝗜𝗭𝗨𝗠𝗜 𝗫𝗗;𝐄𝐘𝐏𝐙",
+      "description": "Sticker pack name, eg : 𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔",
       "required": "false",
       "value": "𝐍𝐄𝐙𝐔𝐊𝐎;𝐆𝐎𝐃-𝐙𝐄𝐍𝐈𝐓𝐒𝐔💗"
     },
