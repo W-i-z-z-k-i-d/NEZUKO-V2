@@ -225,14 +225,14 @@ Description: ${i.desc}\`\`\``);
         const readMore = String.fromCharCode(8206).repeat(4001);
       let menu = `\n╭━━━〔 ${BOT_INFO.split(";")[0]} 〕━━━┈
     ╭──────────────
-  ❖ │  *OWNER*: ${BOT_INFO.split(";")[1]}
-  ❖ │  *USER*: ${usern}
-  ❖ │  *DATE*: ${date}
-  ❖ │  *TIME*: ${time}
-  ❖ │  *COMMANDS*: ${plugins.commands.length}
-  ❖ │  *MODE*: ${config.WORK_TYPE}
-  ❖ │  *PREFIX*: ${config.HANDLERS}
-  ❖ │  *VERSION*: ${require("../package.json").version}
+  ❀ │  *𝐎𝐖𝐍𝐄𝐑*: ${BOT_INFO.split(";")[1]}
+  ❀ │  *𝐔𝐒𝐄𝐑*: ${usern}
+  ❀ │  *𝐃𝐀𝐓𝐄*: ${date}
+  ❀ │  *𝐓𝐈𝐌𝐄*: ${time}
+  ❀ │  *𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒*: ${plugins.commands.length}
+  ❀ │  *𝐌𝐎𝐃𝐄*: ${config.WORK_TYPE}
+  ❀ │  *𝐏𝐑𝐄𝐅𝐈𝐗*: ${config.HANDLERS}
+  ❀ │  *𝐕𝐄𝐑𝐒𝐈𝐎𝐍*: ${require("../package.json").version}
     ╰──────────────
 ╰━━━━━━━━━━━━━━━┈\n ${readMore}`
 
@@ -260,7 +260,7 @@ Description: ${i.desc}\`\`\``);
         menu += `\n ╭┴────────────┈⚆`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n❐  ${cmd.trim()}`;
+          menu += `\n⛭  ${cmd.trim()}`;
         });
         menu += `\n ╰─────────────┈⚆`;
       });
