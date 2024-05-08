@@ -46,6 +46,18 @@
 <a href='https://replit.com/github/V
 godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
 
+### External-Plugins
+
+<details close>
+<summary>Read More</summary>
+
+<br>
+
+
+* [`External PLUGINS`](https://github.com/godzenitsu/nezuko-plugins)
+
+
+
 ### sᴜᴘᴘᴏʀᴛ ᴍᴇ
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.buymeacoffee.com/safeershafo">
