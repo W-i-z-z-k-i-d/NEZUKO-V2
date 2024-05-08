@@ -224,17 +224,18 @@ Description: ${i.desc}\`\`\``);
         let usern = message.pushName
         const readMore = String.fromCharCode(8206).repeat(4001);
       let menu = `\n╭━━━⭙〔 ${BOT_INFO.split(";")[0]} 〕⭙━━━┈
-    ╭──────────────⭙
-   │  *ᴏᴡɴᴇʀ*: ${BOT_INFO.split(";")[1]}
-   │  *ᴜꜱᴇʀ*: ${usern}
-   │  *ᴅᴀᴛᴇ*: ${date}
-   │  *ᴛɪᴍᴇ*: ${time}
-   │  *ᴄᴏᴍᴍᴀɴᴅꜱ*: ${plugins.commands.length}
-   │  *ᴍᴏᴅᴇ*: ${config.WORK_TYPE}
-   │  *ᴩʀᴇꜰɪx*: ${config.HANDLERS}
-   │  *ᴠᴇʀꜱɪᴏɴ*: ${require("../package.json").version}
-    ╰──────────────⭙
-╰━━━━━━━━━━━━━━━┈⭙\n ${readMore}`
+    ╭────────── `\n╭━━━〔 ${BOT_INFO.split(";")[0]} ⁩〕━━━┈⊷
+┃✵╭──────────────
+┃✵│ *ᴏᴡɴᴇʀ* : ${BOT_INFO.split(";")[1]}
+┃✵│ *ᴜꜱᴇʀ* : ${usern}
+┃✵│ *ᴄᴏᴍᴍᴀɴᴅꜱ* : ${plugins.commands.length}
+┃✵│ *ᴛɪᴍᴇ* : ${time}
+┃✵│ *ᴅᴀᴛᴇ* : ${date}
+┃✵│ *ᴩʀᴇꜰɪx* : ${config.HANDLERS}
+┃✵│ *ᴍᴏᴅᴇ* : ${config.WORK_TYPE}
+┃✵│ *ᴠᴇʀꜱɪᴏɴ* : ${require("../package.json").version}
+┃✵╰──────────────
+╰━━━━━━━━━━━━━━━┈⊷\n ${readMore}`
 
       let cmnd = [];
       let cmd;
@@ -260,7 +261,7 @@ Description: ${i.desc}\`\`\``);
         menu += `\n ╭┴────────────┈⭙`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n  ${cmd.trim()}`;
+          menu += `\n ✵ ${cmd.trim()}`;
         });
         menu += `\n ╰─────────────┈⭙`;
       });
