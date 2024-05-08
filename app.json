@@ -1,15 +1,15 @@
 {
-  "name": "Izumi-xd",
-  "description": "IZUMI-XD Multi Device whatsapp bot",
-  "logo": "https://i.imgur.com/Uc0uIkO.jpeg",
+  "name": "Nᴇᴢᴜᴋᴏ-Mᴅ",
+  "description": "NEZUKO-MD Multi Device whatsapp bot",
+  "logo": "https://i.imgur.com/9gIxqXc.jpeg",
   "keywords": ["whatsapp"],
-  "repository": "https://github.com/sataniceypz/Izumi-v2",
-  "website": "https://github.com/sataniceypz/Izumi-v2",
-  "success_url": "https://github.com/sataniceypz/Izumi-v2",
+  "repository": "https://github.com/godzenitsu/NEZUKO-V2",
+  "website": "https://nezukosupport.vercel.app/",
+  "success_url": "https://github.com/godzenitsu/NEZUKO-V2",
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "IZUMI-XD session id",
+      "description": "put ur nezuko session id",
       "required": true
     },
     "LOGS": {
@@ -19,22 +19,22 @@
      "AUDIO_DATA": {
       "description": "audio data , title;artist;image url",
       "required": "false",
-      "value": "𝐄𝐘𝐏𝐙 ; 𝗜𝗭𝗨𝗠𝗜-𝗫𝗗 ; https://telegra.ph/file/c092ab6684953575dac78.jpg"
+      "value": "𝐆𝐎𝐃-𝐙𝐄𝐍𝐈𝐓𝐒𝐔;𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃;https://i.imgur.com/o3AEXEj.jpeg"
      },
      "CAPTION": {
       "description": "enter your media caption",
       "required": "false",
-      "value": "𝗜𝗭𝗨𝗠𝗜-𝗫𝗗"
+      "value": "𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃🦋"
     },
        "STICKER_DATA": {
       "description": "Sticker pack name, eg : 𝗜𝗭𝗨𝗠𝗜 𝗫𝗗;𝐄𝐘𝐏𝐙",
       "required": "false",
-      "value": "𝗜𝗭𝗨𝗠𝗜 𝗫𝗗;𝐄𝐘𝐏𝐙"
+      "value": "𝐍𝐄𝐙𝐔𝐊𝐎;𝐆𝐎𝐃-𝐙𝐄𝐍𝐈𝐓𝐒𝐔💗"
     },
        "BOT_INFO": {
       "description": "Bot info : botname;ownername;imageurl - image or video",
       "required": "false",
-      "value": "𝗜𝗭𝗨𝗠𝗜 𝗫𝗗;𝐄𝐘𝐏𝐙;https://telegra.ph/file/c092ab6684953575dac78.jpg"
+      "value": "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔;https://i.imgur.com/o3AEXEj.jpeg"
     },
      "ALWAYS_ONLINE": {
       "description": "Bot online online : true",
@@ -42,7 +42,7 @@
       "value": "false"
     },
     "SUDO": {
-      "description": "add your bot number here for run Izumi🧚‍♂️",
+      "description": "add your bot number here for run NEZUKO-MD🦋",
       "required": false
     },
     "WORK_TYPE": {
