@@ -230,14 +230,14 @@ Description: ${i.desc}\`\`\``);
         const readMore = String.fromCharCode(8206).repeat(4001);
       let menu = `\n╔┉┉┉〔 ${BOT_INFO.split(";")[0]} 〕┉┉┉┉┉⚇
     ╔┅┅┅┅┅┅┅┅┅┅┅┅⚅
-  ⚈ ┋ *ᴏᴡɴᴇʀ*: ${BOT_INFO.split(";")[1]}
-  ⚈ ┋ *ᴜᴜꜱᴇʀ*: ${usern}
-  ⚈ ┋ *ᴅᴀᴛᴇ*: ${date}
-  ⚈ ┋ *ᴛɪᴍᴇ*: ${time}
-  ⚈ ┋ *ᴄᴏᴍᴍᴀɴᴅꜱ*: ${plugins.commands.length}
-  ⚈ ┋ *ᴍᴏᴅᴇ*: ${config.WORK_TYPE}
-  ⚈ ┋ *ᴩʀᴇꜰɪx*: ${config.HANDLERS}
-  ⚈ ┋ *VERSION*: ${require("../package.json").version}
+  ✻ ┋ *ᴏᴡɴᴇʀ*: ${BOT_INFO.split(";")[1]}
+  ✻ ┋ *ᴜꜱᴇʀ*: ${usern}
+  ✻ ┋ *ᴅᴀᴛᴇ*: ${date}
+  ✻ ┋ *ᴛɪᴍᴇ*: ${time}
+  ✻ ┋ *ᴄᴏᴍᴍᴀɴᴅꜱ*: ${plugins.commands.length}
+  ✻ ┋ *ᴍᴏᴅᴇ*: ${config.WORK_TYPE}
+  ✻ ┋ *ᴩʀᴇꜰɪx*: ${config.HANDLERS}
+  ✻ ┋ *VERSION*: ${require("../package.json").version}
     ╚┅┅┅┅┅┅┅┅┅┅┅┅⚅
 ╚┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉⚇\n ${readMore}\n╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄⛒`;
 
@@ -260,12 +260,12 @@ Description: ${i.desc}\`\`\``);
       cmnd.sort();
       category.sort().forEach((cmmd) => {
         menu += `\n   ╔─────────────┈⚆`;
-        menu += `\n   ࿂┊  ❲ *${cmmd.toUpperCase()}* ❳`;
+        menu += `\n   ➻┊  ❲ *${cmmd.toUpperCase()}* ❳`;
         menu += `\n   ╚┬────────────┈⚆`
         menu += `\n   ╔┴────────────┈⚆`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ✵  ${cmd.trim()}`;
+          menu += `\n   ❃  ${cmd.trim()}`;
         });
         menu += `\n   ╚─────────────┈⚆`;
       });
