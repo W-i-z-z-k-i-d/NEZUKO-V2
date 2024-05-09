@@ -66,36 +66,31 @@ command(
         if (!match) return await message.reply("*_Need YouTube Url_*");
         let dat = `https://api-brunosobrino.onrender.com/api/v1/ytmp3?url=${match}`
 await message.client.sendMessage(message.jid, { audio :{url: dat },  mimetype:"audio/mpeg", contextInfo: { externalAdReply: {
-title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
-body: "𝙎𝙤𝙣𝙜 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮",
+title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🦋",
+body: "𝙎𝙤𝙣𝙜 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 ",
 sourceUrl: "",
 mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, }, {quoted: message })
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}, }, {quoted: message })
     }
     );
 
 // ZETA BRO //
 command(
+    {command(
     {
         pattern: "ytv",
-        fromMe: isPrivate,
-        desc: "YouTube Video Downloader",
+        fromMe: true,
+        desc: "Yt Video Downloader",
         type: "downloader",
     },
     async (message, match) => {
-        if (!match) return await message.reply("*_Need YouTube Url_*");
-await message.sendFromUrl(`https://api-brunosobrino.onrender.com/api/v1/ytmp4?url=${match}`, {contextInfo: { externalAdReply: {
-title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
-body: "𝙑𝙞𝙙𝙚𝙤 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮",
-sourceUrl: "",
-mediaUrl: "",
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption : (X.CAPTION)}, {quoted : message})
+        if (!match) return await message.sendMessage("*_Need a Video URL*");
+
+await message.client.sendMessage(message.jid, { video: { url: `https://api-ironman444ff.koyeb.app/ironman/video?url=${match}`
+ }, caption: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🦋" });
 });
 
 
