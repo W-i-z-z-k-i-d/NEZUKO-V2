@@ -278,7 +278,7 @@ menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❍`;
       isForwarded: false,
       forwardedNewsletterMessageInfo: {
       newsletterJid: '120363239634100086@newsletter',
-      newsletterName: "𝐍𝐄𝐙𝐔𝐊𝐎🦋",
+      newsletterName: "",
       serverMessageId: -1
             }}, caption: (penu)}, {quoted: message })
     }
