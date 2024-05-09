@@ -33,12 +33,12 @@ command(
     },
     async (message, match, client) => {
         const start = new Date().getTime();
-      let { key } = await message.sendMessage(`*ᴩɪɴɢ ㋞*`);
+      let { key } = await message.sendMessage(`*𝗣𝗶𝗻𝗴 ⌬*`);
         const end = new Date().getTime();
 var speed = end - start;
  
 await new Promise(t => setTimeout(t,0))
-         await message.client.sendMessage(message.jid,{text:`*ᴩᴏɴɢ* ㋚
+         await message.client.sendMessage(message.jid,{text:`*𝗣𝗼𝗻𝗴* ㋚
 ${speed} *𝚖𝚜*` , edit: key});
 })
 
@@ -259,17 +259,17 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n   ╔─────────────┈⚆`;
+        menu += `\n   ╔─────────────┈❖`;
         menu += `\n   ➻┊  ❲ *${cmmd.toUpperCase()}* ❳`;
-        menu += `\n   ╚┬────────────┈⚆`
-        menu += `\n   ╔┴────────────┈⚆`;
+        menu += `\n   ╚┬────────────┈❖`
+        menu += `\n   ╔┴────────────┈❖`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ❃  ${cmd.trim()}`;
+          menu += `\n   ✵ ${cmd.trim()}`;
         });
-        menu += `\n   ╚─────────────┈⚆`;
+        menu += `\n   ╚─────────────┈❖`;
       });
-menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄⛒`;
+menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❖`;
       let penu = tiny(menu)
       let vd = BOT_INFO.split(";")[2];
       return await message.sendFromUrl(vd, {fileLength: "500000000", gifPlayback: true, contextInfo: {
@@ -304,7 +304,7 @@ command(
     dontAddCommandList: true,
   },
   async (message, match, { prefix }) => {
-    let menu = `╭───────┈┫「 *𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭* 」┣┈────♡`;
+    let menu = `╭───────┈┫「 *𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁* 」┣┈────❖`;
     menu += `\n│\n`;
 
     let cmnd = [];
@@ -325,7 +325,7 @@ command(
       if (desc) menu += `\n│  Use: \`\`\`${desc}\`\`\``;
       menu += `\n│\n`;
     });
-    menu += `╰───────┈┫「 𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃-𝐁𝐎𝐓 」┣┈────♡`;
+    menu += `╰───────┈┫「 𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃🦋 」┣┈────❖`;
     return await message.reply(message.jid, { text: (tiny(menu)) })
 })
 
