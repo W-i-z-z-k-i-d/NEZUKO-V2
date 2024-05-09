@@ -33,13 +33,13 @@ command(
     },
     async (message, match, client) => {
         const start = new Date().getTime();
-      let { key } = await message.sendMessage(`*𝗣𝗶𝗻𝗴 ⌬*`);
+      let { key } = await message.sendMessage(`*𝗣𝗶𝗻𝗴 〄*`);
         const end = new Date().getTime();
 var speed = end - start;
  
 await new Promise(t => setTimeout(t,0))
-         await message.client.sendMessage(message.jid,{text:`*𝗣𝗼𝗻𝗴* ㋚
-${speed} *𝚖𝚜*` , edit: key});
+         await message.client.sendMessage(message.jid,{text:`*𝗣𝗼𝗻𝗴* 📡
+${speed} *𝗺𝘀*` , edit: key});
 })
 
 /* Copyright (C) 2022 X-Electra.
@@ -228,8 +228,8 @@ Description: ${i.desc}\`\`\``);
         .split(",");
         let usern = message.pushName
         const readMore = String.fromCharCode(8206).repeat(4001);
-      let menu = `\n╔┉┉┉〔 ${BOT_INFO.split(";")[0]} 〕┉┉┉┉┉⚇
-    ╔┅┅┅┅┅┅┅┅┅┅┅┅⚅
+      let menu = `\n╔┉┉┉〔 ${BOT_INFO.split(";")[0]} 〕┉┉┉┉┉❍
+    ╔┅┅┅┅┅┅┅┅┅┅┅┅❍
   ✻ ┋ *ᴏᴡɴᴇʀ*: ${BOT_INFO.split(";")[1]}
   ✻ ┋ *ᴜꜱᴇʀ*: ${usern}
   ✻ ┋ *ᴅᴀᴛᴇ*: ${date}
@@ -238,8 +238,8 @@ Description: ${i.desc}\`\`\``);
   ✻ ┋ *ᴍᴏᴅᴇ*: ${config.WORK_TYPE}
   ✻ ┋ *ᴩʀᴇꜰɪx*: ${config.HANDLERS}
   ✻ ┋ *VERSION*: ${require("../package.json").version}
-    ╚┅┅┅┅┅┅┅┅┅┅┅┅⚅
-╚┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉⚇\n ${readMore}\n╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄⛒`;
+    ╚┅┅┅┅┅┅┅┅┅┅┅┅❍
+╚┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉❍\n ${readMore}\n╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❍`;
 
       let cmnd = [];
       let cmd;
@@ -259,26 +259,26 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n   ╔─────────────┈❖`;
+        menu += `\n   ╔─────────────┈❍`;
         menu += `\n   ➻┊  ❲ *${cmmd.toUpperCase()}* ❳`;
-        menu += `\n   ╚┬────────────┈❖`
-        menu += `\n   ╔┴────────────┈❖`;
+        menu += `\n   ╚┬────────────┈❍`
+        menu += `\n   ╔┴────────────┈❍`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ✵ ${cmd.trim()}`;
+          menu += `\n   ❋ ${cmd.trim()}`;
         });
-        menu += `\n   ╚─────────────┈❖`;
+        menu += `\n   ╚─────────────┈❍`;
       });
-menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❖`;
+menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❍`;
       let penu = tiny(menu)
       let vd = BOT_INFO.split(";")[2];
       return await message.sendFromUrl(vd, {fileLength: "500000000", gifPlayback: true, contextInfo: {
       mentionedJid: [m.sender],
       forwardingScore: 999,
-      isForwarded: true,
+      isForwarded: false,
       forwardedNewsletterMessageInfo: {
       newsletterJid: '120363239634100086@newsletter',
-      newsletterName: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🦋",
+      newsletterName: "𝐍𝐄𝐙𝐔𝐊𝐎🦋",
       serverMessageId: -1
             }}, caption: (penu)}, {quoted: message })
     }
@@ -304,7 +304,7 @@ command(
     dontAddCommandList: true,
   },
   async (message, match, { prefix }) => {
-    let menu = `╭───────┈┫「 *𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁* 」┣┈────❖`;
+    let menu = `╭───────┈┫「 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 」┣┈────❖`;
     menu += `\n│\n`;
 
     let cmnd = [];
