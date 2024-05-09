@@ -12,15 +12,15 @@ services:
       - key: SESSION_ID
         sync: false
       - key: BOT_INFO
-        value: Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;https://graph.org/file/3879cf1910f65bd8457d7.jpg
+        sync: false
       - key: ALWAYS_ONLINE
         value: true
       - key: AUTO_STATUS_VIEWS
         value: true
       - key: AUDIO_DATA
         value: Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;https://graph.org/file/3879cf1910f65bd8457d7.jpg
-      - key: HANDLER
-        value: /
+      - key: PREFIX
+        value: ^
       - key: WORK_TYPE
         value: private
       - key: SERVER
@@ -36,4 +36,4 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: LOGS
-        value: true 
+        sync: false
