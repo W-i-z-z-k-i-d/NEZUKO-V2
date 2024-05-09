@@ -12,7 +12,7 @@ services:
       - key: SESSION_ID
         sync: false
       - key: BOT_INFO
-        sync: false
+        value: Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;https://graph.org/file/3879cf1910f65bd8457d7.jpg
       - key: ALWAYS_ONLINE
         value: true
       - key: AUTO_STATUS_VIEWS
@@ -36,4 +36,4 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: LOGS
-        sync: false
+        value: true
