@@ -16,7 +16,7 @@ command(
     let admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "add")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Added to The Group!_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, A Demon arrived!_*`, mentions: [user] })
   }
 );
 
@@ -41,7 +41,7 @@ command(
     let admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Kicked from The Group!_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Kicked from The Group!!! U R Now useless_*`, mentions: [user] })
   }
 );
 
@@ -65,7 +65,7 @@ command(
     var admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "promote")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Is Promoted as Admin!_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, You are now a Worthy Demon!_*`, mentions: [user] })
   }
 );
 
@@ -89,7 +89,7 @@ command(
     var admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "demote")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Is no longer an Admin!_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Your Are now worthless!_*`, mentions: [user] })
   }
 );
 
@@ -111,7 +111,7 @@ command(
       return await message.reply("*_This command work only in group chats_*");
     if (!isAdmin(message.jid, message.user, message.client))
       return await message.reply("*_I'm not admin_*");
-    await message.reply("*_Muted!_*");
+    await message.reply("*_Shhhhhh!!Muted!_*");
     return await client.groupSettingUpdate(message.jid, "announcement");
   }
 );
@@ -185,7 +185,7 @@ command(
     const { participants } = await message.client.groupMetadata(message.jid);
     let teks = "";
     for (let mem of participants) {
-      teks += `彡 @${mem.id.split("@")[0]}\n`;
+      teks += `❋ @${mem.id.split("@")[0]}\n`;
     }
     message.sendMessage(teks.trim(), {
       mentions: participants.map((a) => a.id),
@@ -395,7 +395,7 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     match = match || message.reply_message.text
-    if (!match) return await message.reply("*_Need Subject!_*\n*_Example: gname Ezra-MD Support!_.*")
+    if (!match) return await message.reply("*_Need Subject!_*\n*_Example: gname nezuko-MD Support!_.*")
     var { restrict } = message.client.groupMetadata(message.jid);;
     if (restrict && !(await isAdmin(message))) return await message.reply("*_I'm not admin_*");
     await message.client.groupUpdateSubject(message.jid, match)
@@ -419,7 +419,7 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     match = match || message.reply_message.text
-    if (!match) return await message.reply("*_Need Description!_*\n*_Example: gdesc Ezra-XD Wa BOT!_*")
+    if (!match) return await message.reply("*_Need Description!_*\n*_Example: gdesc Nezuko Wa BOT!_*")
     const participants =  await message.client.groupMetadata(message.jid)
     if (participants && !(await isAdmin(message.jid, message.user, message.client))) return await message.reply("_I'm not admin_");
     await message.client.groupUpdateDescription(message.jid, match)
