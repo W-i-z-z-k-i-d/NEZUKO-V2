@@ -46,6 +46,33 @@
 <a href='https://replit.com/github/V
 godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
 
+### ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇᴍᴅᴇʀ
+
+1. 𝘊𝘳𝘦𝘢𝘵𝘦 𝘢𝘯 𝘈𝘤𝘤𝘰𝘶𝘯𝘵.
+    <br>
+<a href='https://dashboard.render.com/register' target="_blank"><img alt='render' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+
+3. Get DATABASE_URL - Using Cockroach Lab, railway etcc
+
+2. 𝘕𝘰𝘸 𝘋𝘦𝘱𝘭𝘰𝘺
+    <br>
+<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+
+<details close>
+    
+<summary>Read More</summary>
+
+### 1. Customise Bot
+
+ Go to Environment Variables and edit and use
+
+### 2. To Run Nezuko Bot 24×7
+    
+ Copy the web url and add to the Environment Variables as SERVERURL
+   
+
+  </details>
+
 ### External-Plugins
 
 <details close>
