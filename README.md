@@ -46,7 +46,7 @@
 <a href='https://replit.com/github/V
 godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
 
-### ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇᴍᴅᴇʀ
+### ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ
 
 1. 𝘊𝘳𝘦𝘢𝘵𝘦 𝘢𝘯 𝘈𝘤𝘤𝘰𝘶𝘯𝘵.
     <br>
