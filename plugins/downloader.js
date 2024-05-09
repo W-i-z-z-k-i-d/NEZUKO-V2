@@ -19,7 +19,7 @@ await message.client.sendMessage(message.jid, { text: `*_Downloading ${song.data
 const aswinsparky = await (await fetch(`${song.data.downloadUrl}`)).buffer()
 await message.client.sendMessage(message.jid, { audio :aswinsparky,  mimetype:"audio/mpeg", contextInfo: { externalAdReply: {
 title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
-body: "𝙎𝙤𝙣𝙜 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮",
+body: "𝙎𝙤𝙣𝙜 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 ",
 sourceUrl: "",
 mediaUrl: "",
 mediaType: 1,
