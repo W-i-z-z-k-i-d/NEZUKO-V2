@@ -80,7 +80,7 @@ command(
   async (message, match) => {
     match = match || message.reply_message.text
    if (!match)return message.reply(`*_Need instagram Link_*`)
-const res = await axios.get(`https://api.lokiser.xyz/download/insta?url=${match}`);
+const res = await axios.get(`https://api-ironman444ff.koyeb.app/ironman/insta${match}`);
 var video = res.data[0].download_link;
 await message.sendFromUrl(video, { caption: "𝘕𝘌𝘡𝘜𝘒𝘖𝘖🦋"});
 });
