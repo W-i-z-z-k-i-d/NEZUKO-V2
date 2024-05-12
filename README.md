@@ -92,11 +92,11 @@ godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields
 </a>
 
   ### ᴛʜᴀɴᴋs ᴛᴏ
-- [LOKI❤️](https://github.com/Loki-Xer) <br>
+- [LOKI❤️](https://github.com/Loki-Xer) For help<br>
 - [X-Electra](https://github.com/X-Electra) for [X-Asena](https://github.com/X-Electra/X-Asena)
-- [ZETA](https://github.com/Kingbadan321)
-- [EFY](https://github.com/Efy5555)
-- <br><br>
+- [ZETA](https://github.com/Kingbadan321) For help
+- [EFY](https://github.com/Efy5555) For Support
+ <br><br>
 
 
 
