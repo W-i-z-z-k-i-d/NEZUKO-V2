@@ -187,7 +187,7 @@ command(
     type: "user",
   },
   async (message, match,m,client) => {
-    if (!message.reply_message) return await message.reply("*_Reply to a message_*"); {
+    if (!message.reply_message) return await message.reply("*_ohh babyyy!!Reply to a message_*"); {
       await client.sendMessage(message.jid, { delete: message.reply_message.key })
     }
   }
@@ -228,18 +228,18 @@ Description: ${i.desc}\`\`\``);
         .split(",");
         let usern = message.pushName
         const readMore = String.fromCharCode(8206).repeat(4001);
-      let menu = `\n╔┉┉┉〔 ${BOT_INFO.split(";")[0]} 〕┉┉┉┉┉❍
-    ╔┅┅┅┅┅┅┅┅┅┅┅┅❍
-  ✻ ┋ *ᴏᴡɴᴇʀ*: ${BOT_INFO.split(";")[1]}
-  ✻ ┋ *ᴜꜱᴇʀ*: ${usern}
-  ✻ ┋ *ᴅᴀᴛᴇ*: ${date}
-  ✻ ┋ *ᴛɪᴍᴇ*: ${time}
-  ✻ ┋ *ᴄᴏᴍᴍᴀɴᴅꜱ*: ${plugins.commands.length}
-  ✻ ┋ *ᴍᴏᴅᴇ*: ${config.WORK_TYPE}
-  ✻ ┋ *ᴩʀᴇꜰɪx*: ${config.HANDLERS}
-  ✻ ┋ *VERSION*: ${require("../package.json").version}
-    ╚┅┅┅┅┅┅┅┅┅┅┅┅❍
-╚┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉❍\n ${readMore}\n╔┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❍`;
+      let menu = `\n╭═══〔 ${BOT_INFO.split(";")[0]} 〕════ ⪩
+    ╭══════════ ⪩
+  ⎊ ┋ *𝐎𝐰𝐧𝐞𝐫*: ${BOT_INFO.split(";")[1]}
+  ⎊ ┋ *𝐔𝐬𝐞𝐫*: ${usern}
+  ⎊ ┋ *𝐃𝐚𝐭𝐞*: ${date}
+  ⎊ ┋ *𝐓𝐢𝐦𝐞*: ${time}
+  ⎊ ┋ *𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬*: ${plugins.commands.length}
+  ⎊ ┋ *𝐌𝐨𝐝𝐞*: ${config.WORK_TYPE}
+  ⎊ ┋ *𝐏𝐫𝐞𝐟𝐢𝐱*: ${config.HANDLERS}
+  ⎊ ┋ *𝐕𝐞𝐫𝐬𝐢𝐨𝐧*: ${require("../package.json").version}
+    ╰══════════════ ⪧⪧
+╰══════════════ ⪧⪧\n ${readMore}\n╭══════════════ ⪩`;
 
       let cmnd = [];
       let cmd;
@@ -259,17 +259,17 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n   ╔─────────────┈❍`;
-        menu += `\n   ➻┊  ❲ *${cmmd.toUpperCase()}* ❳`;
-        menu += `\n   ╚┬────────────┈❍`
-        menu += `\n   ╔┴────────────┈❍`;
+        menu += `\n   ╭══════════════ ⪩`;
+        menu += `\n   ᯖ┊  ❲ *${cmmd.toUpperCase()}* ❳`;
+        menu += `\n   ╰══════════════ ⪧⪧`
+        menu += `\n   ╭══════════════ ⪩`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ❋ ${cmd.trim()}`;
+          menu += `\n   ᯖ . ${cmd.trim()}`;
         });
-        menu += `\n   ╚─────────────┈❍`;
+        menu += `\n   ╰═════════════ ⪧⪧`;
       });
-menu += `\n╚┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄❍`;
+menu += `\n╰══════════════ ⪧⪧`;
       let penu = tiny(menu)
       let vd = BOT_INFO.split(";")[2];
       return await message.sendFromUrl(vd, {fileLength: "500000000", gifPlayback: true, contextInfo: {
@@ -304,7 +304,7 @@ command(
     dontAddCommandList: true,
   },
   async (message, match, { prefix }) => {
-    let menu = `╭───────┈┫「 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 」┣┈────❖`;
+    let menu = `╭══════════┫⭜ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 ⭝┣═════════⛒`;
     menu += `\n│\n`;
 
     let cmnd = [];
@@ -325,7 +325,7 @@ command(
       if (desc) menu += `\n│  Use: \`\`\`${desc}\`\`\``;
       menu += `\n│\n`;
     });
-    menu += `╰───────┈┫「 𝐍𝐄𝐙𝐔𝐊𝐎-𝐌𝐃🦋 」┣┈────❖`;
+    menu += `╰═══════════┫「 𝙉𝙀𝙕𝙐𝙆𝙊-𝙈𝘿🦋 」┣════════⛒`;
     return await message.reply(message.jid, { text: (tiny(menu)) })
 })
 
