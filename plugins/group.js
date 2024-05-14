@@ -65,7 +65,7 @@ command(
     var admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "promote")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, You are now a Worthy Demon!_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, You Are Now Hashira!!_*`, mentions: [user] })
   }
 );
 
@@ -85,11 +85,11 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     let user = message.mention[0] || message.reply_message.jid
-    if (!user) return await message.reply("*_Need a number/reply/mention!_*");
+    if (!user) return await message.reply("*_Ohh Baby,Need a number/reply/mention!_*");
     var admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "demote")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Your Are now worthless!_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, You Are Not Worthy!!_*`, mentions: [user] })
   }
 );
 
@@ -185,7 +185,7 @@ command(
     const { participants } = await message.client.groupMetadata(message.jid);
     let teks = "";
     for (let mem of participants) {
-      teks += `❋ @${mem.id.split("@")[0]}\n`;
+      teks += `❍ @${mem.id.split("@")[0]}\n`;
     }
     message.sendMessage(teks.trim(), {
       mentions: participants.map((a) => a.id),
@@ -270,7 +270,7 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     var admin = await isAdmin(message.jid, message.user, message.client);
-    if (!admin) return await message.reply("*_I'm not admin_*");
+    if (!admin) return await message.reply("*_Ohh Baby,I'm not admin_*");
     const response = await message.client.groupInviteCode(message.jid)
     await message.reply(`_https://chat.whatsapp.com/${response}_`)
   }
