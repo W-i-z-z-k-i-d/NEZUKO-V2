@@ -183,7 +183,7 @@ mediaUrl: "",
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption: (X)}, {quoted: message })
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}, caption: (X)}, {quoted: message })
 });
 
 command({
@@ -235,26 +235,6 @@ command({
 match = match || message.reply_message.text;
 if(!match) return await message.reply(R);
 const {image} = await textpro(`${tp}create-winter-cold-snow-text-effect-online-1100.html`, [`${match.split(/[|]/)[0]}`, `${match.split(/[|]/)[1]}`]);
-await message.sendFromUrl(image, {contextInfo: { externalAdReply: {
-title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
-body: "",
-sourceUrl: "",
-mediaUrl: "",
-mediaType: 1,
-showAdAttribution: false,
-renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption: (X)}, {quoted: message })
-});
-
-command({
-	pattern: 'neon ?(.*)',
-	fromMe: isPrivate,
-    desc: "generate gfx logo",
-    type: "textpro",
-}, async (message, match) => {
-match = match || message.reply_message.text;
-if(!match) return await message.reply(R);
-const {image} = await textpro(`${tp}neon-light-text-effect-online-882.html`, [`${match.split(/[|]/)[0]}`, `${match.split(/[|]/)[1]}`]);
 await message.sendFromUrl(image, {contextInfo: { externalAdReply: {
 title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
 body: "",
