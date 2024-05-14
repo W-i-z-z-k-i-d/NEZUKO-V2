@@ -25,7 +25,7 @@ mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }} }, {quoted: message })
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }} }, {quoted: message })
     }
     );
 
@@ -50,7 +50,7 @@ mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption: `*${result.title}*`}, {quoted: message })
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}, caption: `*${result.title}*`}, {quoted: message })
     });
 
 // Zeta-XD 
@@ -119,12 +119,12 @@ command(
 var {result} = await getJson(`https://api.lokiser.xyz/api/pinterestdl?link=${match}`)
 await message.sendFromUrl(result.LokiXer.url,{ contextInfo: { externalAdReply: {
 title: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃",
-body: `𝗦𝗘𝗫𝗘𝗦𝗦🌼`,
+body: `⎙`,
 sourceUrl: "",
 mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption: (X.CAPTION)}, {quoted: message})
+thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}, caption: (X.CAPTION)}, {quoted: message})
     }
     );
