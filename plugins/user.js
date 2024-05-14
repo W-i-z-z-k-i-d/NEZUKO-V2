@@ -33,7 +33,7 @@ command(
     },
     async (message, match, client) => {
         const start = new Date().getTime();
-      let { key } = await message.sendMessage(`*𝗣𝗶𝗻𝗴 〄*`);
+      let { key } = await message.sendMessage(`*𝗣𝗶𝗻𝗴 ⎊*`);
         const end = new Date().getTime();
 var speed = end - start;
  
@@ -228,16 +228,16 @@ Description: ${i.desc}\`\`\``);
         .split(",");
         let usern = message.pushName
         const readMore = String.fromCharCode(8206).repeat(4001);
-      let menu = `\n╭═══〔 ${BOT_INFO.split(";")[0]} 〕════ ⪩
-    ╭══════════ ⪩
-  ⎊ ┋ *𝐎𝐰𝐧𝐞𝐫*: ${BOT_INFO.split(";")[1]}
-  ⎊ ┋ *𝐔𝐬𝐞𝐫*: ${usern}
-  ⎊ ┋ *𝐃𝐚𝐭𝐞*: ${date}
-  ⎊ ┋ *𝐓𝐢𝐦𝐞*: ${time}
-  ⎊ ┋ *𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬*: ${plugins.commands.length}
-  ⎊ ┋ *𝐌𝐨𝐝𝐞*: ${config.WORK_TYPE}
-  ⎊ ┋ *𝐏𝐫𝐞𝐟𝐢𝐱*: ${config.HANDLERS}
-  ⎊ ┋ *𝐕𝐞𝐫𝐬𝐢𝐨𝐧*: ${require("../package.json").version}
+      let menu = `\n╭═══〔 ${BOT_INFO.split(";")[0]} 〕═══ ⪩
+    ╭════════ ⪩
+  ✦ ┋ *𝐎𝐰𝐧𝐞𝐫*: ${BOT_INFO.split(";")[1]}
+  ✦ ┋ *𝐔𝐬𝐞𝐫*: ${usern}
+  ✦ ┋ *𝐃𝐚𝐭𝐞*: ${date}
+  ✦ ┋ *𝐓𝐢𝐦𝐞*: ${time}
+  ✦ ┋ *𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬*: ${plugins.commands.length}
+  ✦ ┋ *𝐌𝐨𝐝𝐞*: ${config.WORK_TYPE}
+  ✦ ┋ *𝐏𝐫𝐞𝐟𝐢𝐱*: ${config.HANDLERS}
+  ✦ ┋ *𝐕𝐞𝐫𝐬𝐢𝐨𝐧*: ${require("../package.json").version}
     ╰══════════════ ⪧⪧
 ╰══════════════ ⪧⪧\n ${readMore}\n╭══════════════ ⪩`;
 
@@ -265,7 +265,7 @@ Description: ${i.desc}\`\`\``);
         menu += `\n   ╭══════════════ ⪩`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ᯖ . ${cmd.trim()}`;
+          menu += `\n   ᯖ  ${cmd.trim()}`;
         });
         menu += `\n   ╰═════════════ ⪧⪧`;
       });
@@ -304,7 +304,7 @@ command(
     dontAddCommandList: true,
   },
   async (message, match, { prefix }) => {
-    let menu = `╭══════════┫⭜ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 ⭝┣═════════⛒`;
+    let menu = `╭══════════┫ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 ⎙┣═════════⛒`;
     menu += `\n│\n`;
 
     let cmnd = [];
@@ -404,7 +404,7 @@ command(
     var mesaj = "";
     var plugins = await PluginDB.findAll();
     if (plugins.length < 1) {
-      return await message.sendMessage("*_No external plugins installed_*");
+      return await message.sendMessage("*_Ohh Baby,No external plugins installed_*");
     } else {
       plugins.map((plugin) => {
         mesaj +=
