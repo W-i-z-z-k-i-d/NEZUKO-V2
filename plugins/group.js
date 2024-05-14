@@ -36,12 +36,12 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     let num = match || message.reply_message.jid
-    if (!num) return await message.reply("*_Need a number/reply/mention!_*");
+    if (!num) return await message.reply("*_Ohh Baby,Need a number/reply/mention!_*");
     let user = num.replace(/[^0-9]/g, "") + "@s.whatsapp.net"
     let admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
-    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Kicked from The Group!!! U R Now useless_*`, mentions: [user] })
+    return await message.client.sendMessage(message.jid, { text: `*_@${user.split("@")[0]}, Kicked from The Group!!! You  Are Now Useless!_*`, mentions: [user] })
   }
 );
 
