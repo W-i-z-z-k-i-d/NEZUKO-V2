@@ -58,7 +58,7 @@ mediaUrl: "",
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: false,
-thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}, caption: (text)}, {quoted: message });
+thumbnailUrl: "https://i.imgur.com/Q49D1NN.mp4" }}, caption: (text)}, {quoted: message });
     } else {
       message.reply(styletext(message.reply_message.text, parseInt(match)));
     }
@@ -107,6 +107,51 @@ X-Asena - X-Electra
 
 command(
   {
+    pattern: "tgs",
+    fromMe: isPrivate,
+    desc: "Download Sticker From Telegram",
+    type: "download",
+  },
+  async (message, match) => {
+    if (!match)
+      return message.reply(
+        "*_Enter a tg sticker url_*\n*_Eg: https://t.me/addstickers/Oldboyfinal\nKeep in mind that there is a chance of ban if used frequently_*"
+      );
+    let packid = match.split("/addstickers/")[1];
+    let { result } = await getJson(
+      `https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(
+        packid
+      )}`
+    );
+    if (result.is_animated)
+      return message.reply("*_Animated stickers are not supported_*");
+    message.reply(
+      `*_Total stickers :_* ${result.stickers.length}\n*_Estimated complete in:_* ${
+        result.stickers.length * 1.5
+      } seconds`.trim()
+    );
+    for (let sticker of result.stickers) {
+      let file_path = await getJson(
+        `https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${sticker.file_id}`
+      );
+      await message.sendMessage(
+        `https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/${file_path.result.file_path}`,
+        { packname: config.STICKER_DATA.split(";")[0], author: config.STICKER_DATA.split(";")[1] },
+        "sticker"
+      );
+      sleep(1500);
+    }
+  }
+);
+
+/* Copyright (C) 2022 X-Electra.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+X-Asena - X-Electra
+*/
+
+command(
+  {
     pattern: "take",
     fromMe: isPrivate,
     desc: "Changes Exif data of stickers",
@@ -133,7 +178,8 @@ thumbnailUrl: "https://i.imgur.com/imOAWEN.jpeg" }}
       },
       "sticker"
     );
-  
+  }
+);
 
 /* Copyright (C) 2022 X-Electra.
 Licensed under the  GPL-3.0 License;
