@@ -186,7 +186,7 @@ command(
     if (commits.total === 0) {
       await message.sendMessage("*_No Updates Available_*");
     } else {
-      var availupdate = "*ᴜᴘᴅᴀᴛᴇs ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ꜰᴏʀ ɴᴇᴢᴜᴋᴏ* \n\n";
+      var availupdate = "*_𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗔𝗿𝗲 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗙𝗼𝗿 𝗡𝗲𝘇𝘂𝗸𝗼!_* \n\n";
       commits["all"].map((commit, num) => {
         availupdate += num + 1 + " ⋆ " + (commit.message) + "\n";
       });
