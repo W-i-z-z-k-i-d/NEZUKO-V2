@@ -79,10 +79,10 @@ command(
   },
   async (message, match) => {
     match = match || message.reply_message.text
-   if (!match)return message.reply(`*_Need instagram Link_*`)
-const res = await axios.get(`https://api-ironman444ff.koyeb.app/ironman/insta${match}`);
+   if (!match)return message.reply(`*_Ohh Baby!!Need instagram Link_*`)
+const res = await axios.get(`https://api-ironman444ff.koyeb.app/ironman/insta?url=${match}`);
 var video = res.data[0].download_link;
-await message.sendFromUrl(video, { caption: "𝘕𝘌𝘡𝘜𝘒𝘖𝘖🦋"});
+await message.sendFromUrl(video, { caption: "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃🦋"});
 });
 
 command(
@@ -94,7 +94,7 @@ command(
   },
   async (message, match) => {
     match = match || message.reply_message.text
-   if (!match)return message.reply(`*_Need Story Link_*`)
+   if (!match)return message.reply(`*_Ohh Baby!!Need Story Link_*`)
       var { data } = await getJson(`https://api.vihangayt.asia/downloader/ig?url=${match}`);
         
         for (let i = 0; i < data.data.length; i++) {
