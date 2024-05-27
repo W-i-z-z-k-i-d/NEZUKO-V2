@@ -260,12 +260,12 @@ Description: ${i.desc}\`\`\``);
       cmnd.sort();
       category.sort().forEach((cmmd) => {
         menu += `\n   ╭══════════════⊷`;
-        menu += `\n  ┃✵┃  ❲ *${cmmd.toUpperCase()}* ❳`;
+        menu += `\n  ❖┋  ❲ *${cmmd.toUpperCase()}* ❳`;
         menu += `\n   ╰══════════════⊷`
         menu += `\n   ╭══════════════⊷`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ᯖ  ${cmd.trim()}`;
+          menu += `\n   ✵  ${cmd.trim()}`;
         });
         menu += `\n   ╰═════════════⊷`;
       });
