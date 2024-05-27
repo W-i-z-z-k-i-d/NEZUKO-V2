@@ -22,7 +22,7 @@ const store = makeInMemoryStore({
 require("events").EventEmitter.defaultMaxListeners = 500;
       
 if (!fs.existsSync("./lib/session/creds.json")) {
-  MakeSession(config.SESSION_ID, "lib/session", "mongodb+srv://Zenitsu:godzenitsu12@nezuko02.nbdrnfe.mongodb.net/?retryWrites=true&w=majority&appName=Nezuko02").then(
+  MakeSession(config.SESSION_ID, "lib/session", "mongodb+srv://godzenitsu:godzenitsu@cluster0.czhj8cm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(
     console.log("Vesrion : " + require("./package.json").version)
   );
 }
@@ -115,7 +115,7 @@ async function Abhiy() {
       });
       console.log("𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘✅");
       let readMore = String.fromCharCode(8206).repeat(4001);
-      let str = `𝐍𝐄𝐙𝐔𝐊𝐎 𝐒𝐓𝐀𝐑𝐓𝐄𝐃..!! ${readMore}\n\n\n⎊𝐕𝐄𝐑𝐒𝐈𝐎𝐍   : *${require("./package.json").version }* \n⎊𝐏𝐋𝐔𝐆𝐈𝐍𝐒  : *${events.commands.length}* \n⎊𝐌𝐎𝐃𝐄  : *${config.WORK_TYPE}* \n⎊𝐏𝐑𝐄𝐅𝐈𝐗  : *${config.HANDLERS}*`;
+      let str = `𝐍𝐄𝐙𝐔𝐊𝐎 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 ${readMore}\n\n\n⎊𝐕𝐄𝐑𝐒𝐈𝐎𝐍   : *${require("./package.json").version }* \n⎊𝐏𝐋𝐔𝐆𝐈𝐍𝐒  : *${events.commands.length}* \n⎊𝐌𝐎𝐃𝐄  : *${config.WORK_TYPE}* \n⎊𝐏𝐑𝐄𝐅𝐈𝐗  : *${config.HANDLERS}*`;
       conn.sendMessage(conn.user.id, { text: str });
      try {
         conn.ev.on("creds.update", saveCreds);
