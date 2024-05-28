@@ -34,7 +34,7 @@
        "BOT_INFO": {
       "description": "Bot info : botname;ownername;imageurl - image or video",
       "required": "false",
-      "value": "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔;https://i.imgur.com/o3AEXEj.jpeg"
+      "value": "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔;https://i.imgur.com/imOAWEN.jpeg"
     },
      "ALWAYS_ONLINE": {
       "description": "Bot online online : true",
