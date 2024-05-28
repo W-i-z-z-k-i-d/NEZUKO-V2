@@ -13,18 +13,16 @@ command(
 
 SIMPLE AND EASY TO USE WHATSAPP BOT
 
-```REPO```: ````https://github.com/godzenitsu/NEZUKO-V2````
+𝗥𝗘𝗣𝗢: ````https://github.com/godzenitsu/NEZUKO-V2````
 
-❒ ```FORK AND STAR THE REPO```
+𝗢𝗣𝗘𝗡 𝗦𝗢𝗨𝗥𝗖𝗘
 
-```OPEN SOURCE```
-
-➫ ```SESSION``` : ````https://queen-nezuko-web.onrender.com/````
+➫ 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 : https://queen-nezuko-web.onrender.com/
 
 
-➫ ```SUPPORT ```
+➫ 𝗦𝗨𝗣𝗣𝗢𝗥𝗧
 
-````https://chat.whatsapp.com/DcGABEejUwOG8YcgGOcizF````\n`
+https://chat.whatsapp.com/DcGABEejUwOG8YcgGOcizF\n
         
         return await message.client.relayMessage(message.jid,  {
         requestPaymentMessage: {
