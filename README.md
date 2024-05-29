@@ -35,6 +35,22 @@
     <br>
 <a href='https://nezuko-deploy-heroku.vercel.app/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
+#### DEPLOY TO KOYEB 
+
+1. If You don't have a account in koyeb. Create a account.
+    <br>
+<a href='https://app.koyeb.com/auth/signup' target="_blank"><img alt='koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+
+2. Get DATABASE_URL - Using Cockroach Lab, railway etcc
+
+3. Get [Koyeb api key](https://app.koyeb.com/account/api)
+
+4. Now Deploy
+    <br>
+<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/godzenitsu/NEZUKO-V2&branch=main&name=jarvis-md&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=919539060020,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+
+5. Changing PORT - There will (8000) in exposed port kindly change it to (3000)
+
 ### ᴅᴇᴘʟᴏʏ ᴛᴏ ʀᴇᴘʟɪᴛ
 
 3. 𝘊𝘳𝘦𝘢𝘵𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵.
