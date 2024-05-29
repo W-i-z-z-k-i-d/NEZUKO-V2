@@ -85,7 +85,7 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     let user = message.mention[0] || message.reply_message.jid
-    if (!user) return await message.reply("*_Ohh Baby,Need a number/reply/mention!_*");
+    if (!user) return await message.reply("*_Ohh,Need a number/reply/mention!_*");
     var admin = await isAdmin(message.jid, message.user, message.client);
     if (!admin) return await message.reply("*_I'm not admin_*");
     await message.client.groupParticipantsUpdate(message.jid, [user], "demote")
@@ -270,7 +270,7 @@ command(
   async (message, match) => {
     if (!message.isGroup) return await message.reply("*_This command only works in group chats_*")
     var admin = await isAdmin(message.jid, message.user, message.client);
-    if (!admin) return await message.reply("*_Ohh Baby,I'm not admin_*");
+    if (!admin) return await message.reply("*_ohh,I'm not admin_*");
     const response = await message.client.groupInviteCode(message.jid)
     await message.reply(`_https://chat.whatsapp.com/${response}_`)
   }
