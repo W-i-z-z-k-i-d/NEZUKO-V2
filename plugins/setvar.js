@@ -12,7 +12,7 @@ command({
 }, async (message, match) => {
         if (!match) return await message.reply('```Either Key or Value is missing```');
 const [key, value] = match.split(':');
-        if (!key || !value) return await message.reply('setvar STICKER_DATA: zeta-xd;badan ser');
+        if (!key || !value) return await message.reply('setvar STICKER_DATA: nezuko;zenitsu');
         await heroku.patch('/apps/' + config.HEROKU_APP_NAME + '/config-vars', {
                 body: {
                         [key.trim().toUpperCase()]: match.replace(key,'').replace(':','').trim()
