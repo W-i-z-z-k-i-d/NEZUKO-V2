@@ -74,7 +74,7 @@ async function Abhiy() {
     const { connection, lastDisconnect } = s;
     if (connection === "connecting") {
       console.log("nezuko");
-      console.log("𝐑𝐄𝐀𝐃𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐈𝐃🌻");
+      console.log("Verifying Session...");
     }
 
     if (
@@ -89,8 +89,8 @@ async function Abhiy() {
 
     if (connection === "open") {
     
-      console.log("𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘  𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 𝐓𝐎 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏🪻");
-      console.log("𝐈𝐍𝐒𝐓𝐀𝐋𝐋𝐈𝐍𝐆 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 🛠️");
+      console.log("Nezuko Connected To Whatsapp✅");
+      console.log("Loading Plugins🛠️");
 
       let plugins = await PluginDB.findAll();
       plugins.map(async (plugin) => {
@@ -106,16 +106,16 @@ async function Abhiy() {
           }
         }
       });
-      console.log("𝐏𝐋𝐔𝐆𝐈𝐍𝐒 𝐈𝐍𝐒𝐓𝐀𝐋𝐋𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘!!!");
+      console.log("Plugins Loaded✅");
 
       fs.readdirSync("./plugins").forEach((plugin) => {
         if (path.extname(plugin).toLowerCase() == ".js") {
           require("./plugins/" + plugin);
         }
       });
-      console.log("𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘✅");
+      console.log("Nezuko Is Alive✅");
       let readMore = String.fromCharCode(8206).repeat(4001);
-      let str = `𝐍𝐄𝐙𝐔𝐊𝐎 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 ${readMore}\n\n\n⎊𝐕𝐄𝐑𝐒𝐈𝐎𝐍   : *${require("./package.json").version }* \n⎊𝐏𝐋𝐔𝐆𝐈𝐍𝐒  : *${events.commands.length}* \n⎊𝐌𝐎𝐃𝐄  : *${config.WORK_TYPE}* \n⎊𝐏𝐑𝐄𝐅𝐈𝐗  : *${config.HANDLERS}*`;
+      let str = `*𖢵 ɴᴇᴢᴜᴋᴏ ꜱᴛᴀʀᴛᴇᴅ* ${readMore}\n\n\n*⸙ ᴠᴇʀꜱɪᴏɴ*   : *${require("./package.json").version }* \n*⸙ ᴩʟᴜɢɪɴꜱ*  : *${events.commands.length}* \n*⸙ ᴡᴏʀᴋ ᴛʏᴩᴇ*  : *${config.WORK_TYPE}* \n*⸙ ᴩʀᴇꜰɪx*  : *${config.HANDLERS}*`;
       conn.sendMessage(conn.user.id, { text: str });
      try {
         conn.ev.on("creds.update", saveCreds);
