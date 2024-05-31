@@ -47,7 +47,7 @@
 
 4. Now Deploy
     <br>
-<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/godzenitsu/NEZUKO-V2&branch=main&name=jarvis-md&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=919539060020,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/godzenitsu/NEZUKO-V2&branch=main&name=jarvis-md&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=917907387121,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
 5. Changing PORT - There will (8000) in exposed port kindly change it to (3000)
 
@@ -110,7 +110,7 @@
 - [LOKI❤️](https://github.com/Loki-Xer) For help<br>
 - [X-Electra](https://github.com/X-Electra) for [X-Asena](https://github.com/X-Electra/X-Asena)
 - [ZETA](https://github.com/Kingbadan321) For help
-- [ZETA](https://github.com/Kiranxer) For Help
+- [KIRAN XER](https://github.com/Kiranxer) For Help
 - [EFY](https://github.com/Efy5555) For Support
  <br><br>
 
