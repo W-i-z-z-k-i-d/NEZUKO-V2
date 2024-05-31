@@ -110,6 +110,7 @@
 - [LOKI❤️](https://github.com/Loki-Xer) For help<br>
 - [X-Electra](https://github.com/X-Electra) for [X-Asena](https://github.com/X-Electra/X-Asena)
 - [ZETA](https://github.com/Kingbadan321) For help
+- [ZETA](https://github.com/Kiranxer) For Help
 - [EFY](https://github.com/Efy5555) For Support
  <br><br>
 
