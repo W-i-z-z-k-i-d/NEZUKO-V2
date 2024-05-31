@@ -120,7 +120,7 @@ command(
       });
     } else {
       await message.block(message.jid);
-      return await message.reply("_User blocked_");
+      return await message.reply("_Enemy blocked_");
     }
   }
 );
@@ -230,16 +230,16 @@ Description: ${i.desc}\`\`\``);
         const readMore = String.fromCharCode(8206).repeat(4001);
       let menu = `\n╭━━━〔 ${BOT_INFO.split(";")[0]} 〕━━┈⊷
   ╭────────────────⊷   
-  ┃⛥│ 𝐎𝐰𝐧𝐞𝐫: ${BOT_INFO.split(";")[1]}
-  ┃⛥│ 𝐔𝐬𝐞𝐫: ${usern}
-  ┃⛥│ 𝐃𝐚𝐭𝐞: ${date}
-  ┃⛥│ 𝐓𝐢𝐦𝐞: ${time}
-  ┃⛥│ 𝐏𝐥𝐮𝐠𝐢𝐧𝐬: ${plugins.commands.length}
-  ┃⛥│ 𝐌𝐨𝐝𝐞: ${config.WORK_TYPE}
-  ┃⛥│ 𝐏𝐫𝐞𝐟𝐢𝐱: ${config.HANDLERS}
-  ┃⛥│ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: ${require("../package.json").version}
+  ┃✯│ Owner: ${BOT_INFO.split(";")[1]}
+  ┃✯│ User: ${usern}
+  ┃✯│ Date: ${date}
+  ┃✯│ Time: ${time}
+  ┃✯│ Plugins: ${plugins.commands.length}
+  ┃✯│ Mode: ${config.WORK_TYPE}
+  ┃✯│ Prefix: ${config.HANDLERS}
+  ┃✯│ Version: ${require("../package.json").version}
   ╰─────────────────⊷  
-‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ✵ 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 ✵`;
+‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ❐ 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 ❒`;
 
       let cmnd = [];
       let cmd;
