@@ -230,14 +230,14 @@ Description: ${i.desc}\`\`\``);
         const readMore = String.fromCharCode(8206).repeat(4001);
       let menu = `\n╭━━━〔 ${BOT_INFO.split(";")[0]} 〕━━┈⊷
   ╭────────────────⊷   
-  ┃✯│ owner: ${BOT_INFO.split(";")[1]}
-  ┃✯│ user: ${usern}
-  ┃✯│ date: ${date}
-  ┃✯│ time: ${time}
-  ┃✯│ plugins: ${plugins.commands.length}
-  ┃✯│ mode: ${config.WORK_TYPE}
-  ┃✯│ prefix: ${config.HANDLERS}
-  ┃✯│ version: ${require("../package.json").version}
+  ┃✯│ Owner: ${BOT_INFO.split(";")[1]}
+  ┃✯│ User: ${usern}
+  ┃✯│ Date: ${date}
+  ┃✯│ Time: ${time}
+  ┃✯│ Plugins: ${plugins.commands.length}
+  ┃✯│ Mode: ${config.WORK_TYPE}
+  ┃✯│ Prefix: ${config.HANDLERS}
+  ┃✯│ Version: ${require("../package.json").version}
   ╰─────────────────⊷  
 ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ❐ 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 ❒`;
 
@@ -304,7 +304,7 @@ command(
     dontAddCommandList: true,
   },
   async (message, match, { prefix }) => {
-    let menu = `╭══════════┫ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 ⎙┣═════════⛒`;
+    let menu = `╭══════════┫ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁 ⎙┣═════════┈⊷`;
     menu += `\n│\n`;
 
     let cmnd = [];
@@ -325,7 +325,7 @@ command(
       if (desc) menu += `\n│  Use: \`\`\`${desc}\`\`\``;
       menu += `\n│\n`;
     });
-    menu += `╰═══════════┫「 𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃 」┣════════⛒`;
+    menu += `╰═══════════┫「 𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃 」┣════════┈⊷`;
     return await message.reply(message.jid, { text: (tiny(menu)) })
 })
 
@@ -339,7 +339,7 @@ X-Asena - X-Electra
 
 command(
   {
-    pattern: "plugin ?(.*)",
+    pattern: "install ?(.*)",
     fromMe: true,
     desc: "Install External plugins",
     type:'user'
