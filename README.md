@@ -47,9 +47,9 @@
 
 4. Now Deploy
     <br>
-<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/godzenitsu/NEZUKO-V2&branch=main&name=jarvis-md&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=917907387121,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/godzenitsu/NEZUKO-V2&branch=main&name=nezuko-v2&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=917907387121,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
-5. Changing PORT - There will (8000) in exposed port kindly change it to (3000)
+5. Change PORT - There will be (8000) in exposed port kindly change it to (3000)
 
 ### ᴅᴇᴘʟᴏʏ ᴛᴏ ʀᴇᴘʟɪᴛ
 
