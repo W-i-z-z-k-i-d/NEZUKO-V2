@@ -3,9 +3,9 @@
   <img src="https://i.imgur.com/f48WF0n.jpeg" width="300" height="300"/>
   <h1>ＮＥＺＵＫＯ - ＭＤ</h1>
 
-<a href="https://github.com/godzenitsu"><img title="Creator" src="https://img.shields.io/badge/Creator-ZENITSU-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/W-i-z-z-k-i-d"><img title="Creator" src="https://img.shields.io/badge/Creator-WIZZKID-red.svg?style=for-the-badge&logo=github"></a>
 <br>
-<a href="https://github.com/godzenitsu?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/GODZENITSU?color=green&style=flat-square"></a>
+<a href="https://github.com/W-i-z-z-k-i-d?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/WIZZKID?color=green&style=flat-square"></a>
 <a href="https://github.com/godzenitsu/NEZUKO-V2/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/godzenitsu/NEZUKO-V2?color=white&style=flat-square"></a>
 <a href="https://github.com/godzenitsu/NEZUKO-V2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/GODZENITSU/NEZUKO-V2?color=yellow&style=flat-square"></a>
 <div align="left"
@@ -18,11 +18,11 @@
 
 1. _Fork This Repo_
     <br>
-<a href='https://github.com/godzenitsu/NEZUKO-V2/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork_Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://github.com/W_i-z-z-k-i-d/NEZUKO-V2/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork_Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 2. 𝘚𝘤𝘢𝘯 𝘵𝘩𝘦 𝘘𝘙 𝘢𝘯𝘥 𝘤𝘰𝘱𝘺 𝘪𝘵
     <br>
-<a href='https://queen-nezuko-web.onrender.com' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://nezuko-pair.onrender.com' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 ### ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ
