@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/godzenitsu/NEZUKO-V2.git"
+    "url": "git+https://github.com/W-i-z-z-k-i-d/NEZUKO-V2"
   },
   "keywords": [
     "bot",
@@ -22,9 +22,9 @@
   "developer": "ZENITSU",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/godzenitsu/NEZUKO-V2/issues"
+    "url": "https://github.com/W-i-z-z-k-i-d/NEZUKO-V2/issues"
   },
-  "homepage": "https://github.com/godzenitsu/NEZUKO-V2#readme",
+  "homepage": "https://github.com/W-i-z-z-k-i-d/NEZUKO-V2#readme",
   "dependencies": {
     "@whiskeysockets/baileys": "git+https://github.com/A-d-i-t-h-y-a-n/Baileys.js.git",
     "@adiwajshing/keyed-db": "^0.2.4",
