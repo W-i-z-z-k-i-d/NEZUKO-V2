@@ -3,9 +3,9 @@
   "description": "NEZUKO-MD Multi Device whatsapp bot",
   "logo": "https://i.imgur.com/imOAWEN.jpeg",
   "keywords": ["whatsapp"],
-  "repository": "https://github.com/godzenitsu/NEZUKO-V2",
+  "repository": "https://github.com/W-i-z-z-k-i-d/NEZUKO-V2",
   "website": "https://nezukosupport.vercel.app/",
-  "success_url": "https://github.com/godzenitsu/NEZUKO-V2",
+  "success_url": "https://github.com/W-i-z-z-k-i-d/NEZUKO-V2",
   "stack": "container",
   "env": {
     "SESSION_ID": {
