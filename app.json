@@ -44,7 +44,6 @@
     "SUDO": {
       "description": "add your bot number here for run NEZUKO-MD🦋",
       "required": false
-      "value": "254738719757"
     },
     "WORK_TYPE": {
       "description": "bot work mode",
