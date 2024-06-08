@@ -16,7 +16,7 @@ module.exports = {
   HANDLERS: process.env.PREFIX || '^[.]',
   BRANCH: "main",
   WARN_COUNT: 3,
-  STICKER_DATA: process.env.STICKER_DATA || "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔",
+  STICKER_DATA: process.env.STICKER_DATA || "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;크리𑁋슈나💓",
   BOT_INFO: process.env.BOT_INFO || "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔;https://i.imgur.com/o3AEXEj.jpeg",
   AUDIO_DATA: process.env.AUDIO_DATA || "Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;https://graph.org/file/3879cf1910f65bd8457d7.jpg",
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
