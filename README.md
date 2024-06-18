@@ -47,7 +47,7 @@
 
 4. Now Deploy
     <br>
-<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/godzenitsu/NEZUKO-V2&branch=main&name=nezuko-v2&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=917907387121,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+<a href='https://app.koyeb.com/apps/deploy?type=git&repository=https://github.com/W-i-z-z-k-i-d/NEZUKO-V2&branch=main&name=nezuko-v2&builder=dockerfile&env[WORK_TYPE]=&env[SUDO]=917907387121,0&env[DATABASE_URL]=&env[SESSION_ID]=' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
 5. Change PORT - There will be (8000) in exposed port kindly change it to (3000)
 
@@ -59,7 +59,7 @@
 
 4. 𝘕𝘰𝘸 𝘋𝘦𝘱𝘭𝘰𝘺
     <br>
-<a href='https://replit.com/github/godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
+<a href='https://replit.com/github/W-i-z-z-k-i-d/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=orange'/></a>
 
 ### ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ
 
@@ -71,7 +71,7 @@
 
 2. 𝘕𝘰𝘸 𝘋𝘦𝘱𝘭𝘰𝘺
     <br>
-<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/godzenitsu/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/W-i-z-z-k-i-d/NEZUKO-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
 
 <details close>
     
