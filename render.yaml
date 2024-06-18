@@ -3,7 +3,7 @@ services:
     name: NEZUKO-V2
     env: node
     branch: main
-    repo: https://github.com/godzenitsu/NEZUKO-V2.git
+    repo: https://github.com/W-i-z-z-k-i-d/NEZUKO-V2.git
     buildCommand: npm install
     startCommand: npm start
     plan: free
